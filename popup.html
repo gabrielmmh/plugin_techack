@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Privacidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Relatório de Privacidade</h1>
+
+        <div class="card">
+            <h2>Conexões de Terceiros <span id="connectionsCount">(0)</span></h2>
+            <ul id="connectionList" class="cookie-list hidden"></ul>
+            <button id="toggleButton">Ver Mais</button>
+        </div>
+
+        <div class="card">
+            <h2>Cookies</h2>
+            <div>
+                <button id="firstPartyToggle">Cookies de Primeira Parte <span
+                        id="firstPartyCookiesCount">(0)</span></button>
+                <ul id="firstPartyCookiesList" class="cookie-list hidden"></ul>
+            </div>
+            <div>
+                <button id="thirdPartyToggle">Cookies de Terceira Parte <span
+                        id="thirdPartyCookiesCount">(0)</span></button>
+                <ul id="thirdPartyCookiesList" class="cookie-list hidden"></ul>
+            </div>
+            <div>
+                <button id="sessionToggle">Cookies de Sessão <span
+                        id="sessionCookiesCount">(0)</span></button>
+                <ul id="sessionCookiesList" class="cookie-list hidden"></ul>
+            </div>
+            <div>
+                <button id="persistentToggle">Cookies Persistentes <span
+                        id="persistentCookiesCount">(0)</span></button>
+                <ul id="persistentCookiesList" class="cookie-list hidden"></ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Armazenamento Local</h2>
+            <p id="localStorage">Verificando...</p>
+        </div>
+
+        <div class="card">
+            <h2>Fingerprinting</h2>
+            <p id="fingerprinting">Verificando...</p>
+        </div>
+
+        <div class="card">
+            <h2>Hijacking</h2>
+            <p id="hijacking">Verificando...</p>
+        </div>
+
+        <div class="card">
+            <h2>Pontuação</h2>
+            <p id="score" class="score">Verificando...</p>
+            <p id="scoreDescription"></p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
